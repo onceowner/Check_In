@@ -15,7 +15,7 @@ def shangwangke():
 
         #time.sleep(5)
 
-        #driver.find_element_by_xpath("//*[@class='btn btn-primary']").click() 
+        driver.find_element_by_xpath("//*[@data-dismiss='modal']").click() 
 
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
         print('签到成功')
