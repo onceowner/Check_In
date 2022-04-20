@@ -13,7 +13,7 @@ def shangwangke():
         driver.find_element_by_xpath("//*[@id='password']").send_keys(password)
         driver.find_element_by_xpath("//*[@class='btn btn-primary btn-lg btn-block login']").click()
 
-        #time.sleep(5)
+        time.sleep(5)
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click() 
 
