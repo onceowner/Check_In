@@ -16,11 +16,11 @@ def edu():
         driver.find_element_by_xpath("//*[@id='passwd']").send_keys(password)
         driver.find_element_by_xpath("//*[@id='login']").click()
 
-        time.sleep(10)
+        time.sleep(20)
 
         #driver.find_element_by_xpath("//*[@data-dismiss='modal']").click() 
 
-        driver.find_element_by_xpath("//*[@class='btn btn-brand btn-flat']").click()
+        driver.find_element_by_xpath("//*[@id='checkin']").click()
         print('签到成功')
     except:
         raise
