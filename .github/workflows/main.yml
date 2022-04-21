@@ -36,8 +36,8 @@ jobs:
         run: |
           sudo cp -p ./chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
-          # python ./ikuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
-          python ./shangwangke.py ${{ secrets.SHANGWANGKE_NAME }} ${{ secrets.SHANGWANGKE_PWD }}
+          python ./ikuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
+          # python ./shangwangke.py ${{ secrets.SHANGWANGKE_NAME }} ${{ secrets.SHANGWANGKE_PWD }}
           # python ./gamekegs.py ${{ secrets.GAMEKEGS_USERNAME }} ${{ secrets.GAMEKEGS_PASSWORD }}
           # python ./muacloud.py ${{ secrets.MUACLOUD_USERNAME }} ${{ secrets.MUACLOUD_PASSWORD }}
           # python ./juejin.py   ${{ secrets.JUEJIN_USERNAME }} ${{ secrets.JUEJIN_PASSWORD }} 
