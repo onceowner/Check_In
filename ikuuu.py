@@ -1,7 +1,7 @@
 from util import *
 
-username = sys.argv[0] # 登录账号
-password = sys.argv[1] # 登录密码
+username = sys.argv[1] # 登录账号
+password = sys.argv[2] # 登录密码
 
 
 
@@ -10,10 +10,10 @@ def ikuuu():
         driver = get_web_driver()
         driver.get("https://ikuuu.co/auth/login")
         
-        driver.find_element_by_xpath("//*[@class='nav-link dropdown-toggle nav-link-lg nav-link-user']").click()
-        driver.find_element_by_xpath("//*[@class='dropdown-item has-icon text-danger']").click()
+        #driver.find_element_by_xpath("//*[@class='nav-link dropdown-toggle nav-link-lg nav-link-user']").click()
+        #driver.find_element_by_xpath("//*[@class='dropdown-item has-icon text-danger']").click()
         
-        driver.implicitly_wait(10)
+        #driver.implicitly_wait(10)
         #time.sleep(5)
         
         driver.find_element_by_xpath("//*[@id='email']").send_keys(username)
@@ -24,6 +24,7 @@ def ikuuu():
         #time.sleep(5)
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
+        driver.implicitly_wait(10)
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
     except:
         raise
