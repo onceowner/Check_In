@@ -26,7 +26,7 @@ def jiji():
 
         driver.find_element_by_xpath("//*[@class='el-button el-button--primary']").click()
         print("登录2成功")
-        ###driver.implicitly_wait(10)
+        driver.implicitly_wait(10)
         driver.find_element_by_xpath("//*[@class='ui button purple tiny mt-2 pio-tip mr-0 fontsize']").click()
         print("签到成功")
     except:
