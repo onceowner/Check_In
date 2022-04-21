@@ -9,6 +9,11 @@ def ikuuu():
     try:
         driver = get_web_driver()
         driver.get("https://ikuuu.co/auth/login")
+        
+        driver.find_element_by_xpath("//*[@class='nav-link dropdown-toggle nav-link-lg nav-link-user']").click()
+        driver.find_element_by_xpath("//*[@class='dropdown-item has-icon text-danger']").click()
+        time.sleep(5)
+        
         driver.find_element_by_xpath("//*[@id='email']").send_keys(username)
         driver.find_element_by_xpath("//*[@id='password']").send_keys(password)
         driver.find_element_by_xpath("//*[@class='btn btn-primary btn-lg btn-block login']").click()
