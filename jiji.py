@@ -26,7 +26,7 @@ def jiji():
 
         driver.find_element_by_xpath("//*[@class='el-button el-button--primary']").click()
         #print("登录2成功")
-        #time.sleep(5)
+        time.sleep(5)
         #driver.find_element_by_xpath("//*[@data-pio='每天签到 800MB~5200MB，祝君好运！1 级用户每月 2 号重置流量为 10G']").click()
         driver.find_element_by_link_text("签到流量").click()
         #print("签到成功")
