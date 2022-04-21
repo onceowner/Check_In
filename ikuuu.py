@@ -17,7 +17,7 @@ def ikuuu():
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
 
-        driver.find_element_by_xpath("//*[@id='yesterday']").click()
+        driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
         print('签到成功')
     except:
         raise
