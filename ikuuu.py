@@ -20,13 +20,13 @@ def ikuuu():
         driver.find_element_by_xpath("//*[@id='password']").send_keys(password)
         driver.find_element_by_xpath("//*[@class='btn btn-primary btn-lg btn-block login']").click()
 
-        driver.get("https://ikuuu.co/user")
-        driver.implicitly_wait(10)
+        #driver.get("https://ikuuu.co/user")
+        #driver.implicitly_wait(10)
         #time.sleep(5)
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
-        driver.implicitly_wait(10)
-        driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
+        #driver.implicitly_wait(10)
+        driver.find_element_by_xpath("//*[@class='far fa-calendar-check']").click()
     except:
         raise
     finally:
