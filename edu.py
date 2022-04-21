@@ -22,7 +22,7 @@ def edu():
         #driver.find_element_by_xpath("//*[@class='waves-attach waves-effect collapsed']").click()
          
         print('延迟成功')
-        driver.find_element_by_xpath("//*[@id='checkin']").click()
+        driver.find_element_by_xpath("//*[@class='btn btn-brand btn-flat']").click()
         print('签到成功')
     except:
         raise
