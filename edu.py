@@ -16,9 +16,9 @@ def edu():
         driver.find_element_by_xpath("//*[@id='passwd']").send_keys(password)
         driver.find_element_by_xpath("//*[@id='login']").click()
         print('登录成功')
-        driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
-        print('我知道成功')
-        time.sleep(20)
+        driver.get("https://wangzi.uk/user")
+        print('刷新成功')
+        time.sleep(5)
         #driver.find_element_by_xpath("//*[@class='waves-attach waves-effect collapsed']").click()
          
         print('延迟成功')
