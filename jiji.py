@@ -28,9 +28,10 @@ def jiji():
         #print("登录2成功")
         #time.sleep(5)
         driver.implicitly_wait(10)
-        driver.find_element_by_xpath("//*/ul[@class='ui button purple tiny mt-2 pio-tip mr-0 fontsize']/li[text()='签到流量']").click()
+        #driver.find_element_by_xpath("//*/ul[@class='ui button purple tiny mt-2 pio-tip mr-0 fontsize']/li[text()='签到流量']").click()
         #driver.find_element_by_xpath("//*[@data-pio='每天签到 800MB~5200MB，祝君好运！1 级用户每月 2 号重置流量为 10G']").click()
         #driver.find_element_by_link_text("签到流量").click()
+        driver.find_element(By.LINK_TEXT,"签到流量").click()
         #print("签到成功")
     except:
         raise
