@@ -37,10 +37,11 @@ jobs:
           sudo cp -p ./chromedriver /usr/bin/
           chmod -R 777 /usr/bin/chromedriver
           sudo timedatectl set-timezone Asia/Shanghai
-          python ./ikuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
+          # python ./ikuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
           # python ./shangwangke.py ${{ secrets.SHANGWANGKE_NAME }} ${{ secrets.SHANGWANGKE_PWD }}
           # python ./edu.py ${{ secrets.EDU_NAME }} ${{ secrets.EDU_PWD }}
-          
+          # python ./ibcn.py ${{ secrets.IBCN_NAME }} ${{ secrets.IBCN_PWD }}
+          python ./jiji.py ${{ secrets.JIJI_NAME }} ${{ secrets.JIJI_PWD }}
           
           # python ./gamekegs.py ${{ secrets.GAMEKEGS_USERNAME }} ${{ secrets.GAMEKEGS_PASSWORD }}
           # python ./muacloud.py ${{ secrets.MUACLOUD_USERNAME }} ${{ secrets.MUACLOUD_PASSWORD }}
