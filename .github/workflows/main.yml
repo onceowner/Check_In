@@ -40,7 +40,7 @@ jobs:
           # python ./shangwangke.py ${{ secrets.SHANGWANGKE_NAME }} ${{ secrets.SHANGWANGKE_PWD }}
           # python ./ikuuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
             
-            python ./edu.py ${{ secrets.EDU_NAME }} ${{ secrets.EDU_PWD }}
+           # python ./edu.py ${{ secrets.EDU_NAME }} ${{ secrets.EDU_PWD }}
           # python ./ibcn.py ${{ secrets.IBCN_NAME }} ${{ secrets.IBCN_PWD }}
           # python ./jiji.py ${{ secrets.JIJI_NAME }} ${{ secrets.JIJI_PWD }}
           
