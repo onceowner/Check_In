@@ -5,7 +5,7 @@ password = sys.argv[2] # 登录密码
 
 
 
-def ikuuu():
+def ikuuuu():
     try:
         driver = get_web_driver()
         driver.get("https://ikuuu.co/auth/login")
@@ -35,4 +35,4 @@ def ikuuu():
         driver.quit()
 
 if __name__ == '__main__':
-    ikuuu()
+    ikuuuu()
