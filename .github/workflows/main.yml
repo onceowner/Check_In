@@ -38,7 +38,7 @@ jobs:
           chmod -R 777 /usr/bin/chromedriver
           sudo timedatectl set-timezone Asia/Shanghai
             python ./shangwangke.py ${{ secrets.SHANGWANGKE_NAME }} ${{ secrets.SHANGWANGKE_PWD }}
-          # python ./ikuuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
+            python ./ikuuuu.py ${{ secrets.IKUUU_NAME }} ${{ secrets.IKUUU_PWD }}
             
            # python ./edu.py ${{ secrets.EDU_NAME }} ${{ secrets.EDU_PWD }}
           # python ./ibcn.py ${{ secrets.IBCN_NAME }} ${{ secrets.IBCN_PWD }}
