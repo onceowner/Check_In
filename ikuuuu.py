@@ -24,7 +24,8 @@ def ikuuuu():
         driver.implicitly_wait(10)
         #time.sleep(5)
 
-        driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
+        #driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
+        driver.find_element_by_xpath("//*/ul[@data-dismiss='modal']/button[text()='Read']").click()
         #print("登录2成功")
         driver.implicitly_wait(10)
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
