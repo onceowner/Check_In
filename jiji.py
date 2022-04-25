@@ -32,7 +32,7 @@ def jiji():
         #driver.find_element_by_xpath("//*[@data-pio='每天签到 800MB~5200MB，祝君好运！1 级用户每月 2 号重置流量为 10G']").click()
         #driver.find_element_by_link_text("签到流量").click()
         #driver.find_element(By.LINK_TEXT,"签到流量").click()
-        driver.find_element_by_xpath("/html/body/div[1]/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div[6]/a").click()
+        driver.find_element_by_xpath("/html/body/div[1]/div/div[2]/section/div/div[2]/div[1]/div/div[2]/div/div[6]").click()
         print("签到成功")
     except:
         raise
