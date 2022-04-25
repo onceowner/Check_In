@@ -21,11 +21,11 @@ def edu():
         #print('刷新成功')
         #time.sleep(5)
         #driver.find_element_by_xpath("//*[@class='waves-attach waves-effect collapsed']").click()
-         
-        #print('延迟成功')
+        driver.implicitly_wait(10)
+        print('延迟成功')
         #driver.switch_to.frame(driver.find_element_by_xpath("//button[@class='btn btn-brand btn-flat']"))
-        driver.find_element_by_xpath("//*/span[@class='icon']/span]").click()
-        #driver.find_element_by_xpath("//*[@id='checkin']").click()
+        #driver.find_element_by_xpath("//*/span[@class='icon']/span]").click()
+        driver.find_element_by_xpath("//*[@id='checkin']").click()
         print('签到成功')
     except:
         raise
