@@ -21,6 +21,9 @@ def ikuuuu():
         driver.find_element_by_xpath("//*[@class='btn btn-primary btn-lg btn-block login']").click()
         #print("登录成功")
         driver.get("https://ikuuu.co/user")
+        print("加载成功")
+        requests.post("https://ikuuu.co/user/checkin")
+        print("提交成功")
         driver.implicitly_wait(10)
         #time.sleep(5)
 
