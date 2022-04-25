@@ -16,7 +16,7 @@ def shangwangke():
         time.sleep(5)
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click() 
-
+        print('签到前置完成')
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
         print('签到成功')
     except:
