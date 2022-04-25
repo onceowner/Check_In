@@ -22,7 +22,7 @@ def shangwangke():
     except:
         raise
     finally:
-        driver.quit()
+        driver.quit() 
         exit()
 
 if __name__ == '__main__':
