@@ -23,6 +23,7 @@ def shangwangke():
         raise
     finally:
         driver.quit()
+        exit()
 
 if __name__ == '__main__':
     shangwangke()
