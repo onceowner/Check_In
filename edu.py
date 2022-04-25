@@ -26,7 +26,8 @@ def edu():
         #driver.switch_to.frame(driver.find_element_by_xpath("//button[@class='btn btn-brand btn-flat']"))
         #driver.find_element_by_xpath("//*/span[@class='icon']/span]").click()
         #driver.find_element_by_xpath("//*[@id='checkin']").click()
-        driver.find_element_by_xpath("//button[contains(text(),'或者摇动手机签到')]")
+        #driver.find_element_by_xpath("//button[contains(text(),'或者摇动手机签到')]")
+        driver.find_element_by_xpath("//button[@id='checkin']").click()
         print('edu签到成功')
     except:
         raise
