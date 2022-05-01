@@ -33,7 +33,7 @@ def ikuuuu():
         driver.implicitly_wait(10)
         #print("ikuu前置成功")
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
-        #print("ikuu签到成功")
+        print("ikuu签到成功")
     except:
         raise
     finally:
