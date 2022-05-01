@@ -24,19 +24,24 @@ def ikuuuu():
         
         #requests.post("https://ikuuu.co/user/checkin")
         #print("提交成功")
-        #driver.implicitly_wait(10)
-        time.sleep(10)
+        driver.implicitly_wait(10)
+        #time.sleep(10)
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click()
         #driver.find_element_by_xpath("//*/ul[@data-dismiss='modal']/button[text()='Read']").click()
         #print("登录2成功")
-        driver.implicitly_wait(10)
+        #driver.implicitly_wait(10)
         #print("ikuu前置成功")
-        driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
-        print("ikuu签到成功")
+        #driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
+        #print("ikuu签到成功")
     except:
         raise
     finally:
+        try:
+            driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
+            print("ikuu签到成功")
+        except:
+            raise
         driver.quit()
 
 if __name__ == '__main__':
