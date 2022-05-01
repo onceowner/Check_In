@@ -31,14 +31,13 @@ def ikuuuu():
         #driver.find_element_by_xpath("//*/ul[@data-dismiss='modal']/button[text()='Read']").click()
         #print("登录2成功")
         driver.implicitly_wait(10)
-        print("ikuu前置成功")
+        #print("ikuu前置成功")
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
         #print("ikuu签到成功")
     except:
         raise
     finally:
         driver.quit()
-        exit()
 
 if __name__ == '__main__':
     ikuuuu()
