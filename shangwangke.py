@@ -16,14 +16,13 @@ def shangwangke():
         time.sleep(5)
 
         driver.find_element_by_xpath("//*[@data-dismiss='modal']").click() 
-        print('签到前置完成')
+        #print('签到前置完成')
         driver.find_element_by_xpath("//*[@onclick='checkin()']").click()
-        print('签到成功')
+        print('上网课签到成功')
     except:
         raise
     finally:
         driver.quit() 
-        exit()
 
 if __name__ == '__main__':
     shangwangke()
