@@ -42,7 +42,10 @@ def ikuuuu():
             print("ikuu签到成功")
         except:
             raise
-        driver.quit()
+        finally:
+            driver.quit()
+            exit()
+        
 
 if __name__ == '__main__':
     ikuuuu()
