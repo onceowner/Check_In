@@ -22,7 +22,7 @@ def edu():
         #time.sleep(5)
         #driver.find_element_by_xpath("//*[@class='waves-attach waves-effect collapsed']").click()
         driver.implicitly_wait(10) 
-        print('edu前置成功')
+        #print('edu前置成功')
         #driver.switch_to.frame(driver.find_element_by_xpath("//button[@class='btn btn-brand btn-flat']"))
         #driver.find_element_by_xpath("//*/span[@class='icon']/span]").click()
         driver.find_element_by_xpath("//*[@id='checkin']").click()
